@@ -1,0 +1,14 @@
+﻿La génération a démarré 16/11/2014 18:41:49.
+     1>Projet "C:\Users\Nabaki\Desktop\test_FFTw\test_FFTw\test_FFTw.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Nabaki\Documents\Visual Studio 2013\Projects\test_FFTw\include" /I"C:\Program Files (x86)\Mega-Nerd\libsndfile\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Spectrogram.cpp
+         Spectrogram.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Nabaki\Desktop\test_FFTw\Debug\test_FFTw.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Nabaki\Documents\Visual Studio 2013\Projects\test_FFTw\lib" /LIBPATH:"C:\Program Files (x86)\Mega-Nerd\libsndfile\lib" "libfftw3-3.lib" "libsndfile-1.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Nabaki\Desktop\test_FFTw\Debug\test_FFTw.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Nabaki\Desktop\test_FFTw\Debug\test_FFTw.lib" /MACHINE:X86 Debug\Main.obj
+         Debug\Spectrogram.obj
+         test_FFTw.vcxproj -> C:\Users\Nabaki\Desktop\test_FFTw\Debug\test_FFTw.exe
+     1>Génération du projet "C:\Users\Nabaki\Desktop\test_FFTw\test_FFTw\test_FFTw.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:00.90
