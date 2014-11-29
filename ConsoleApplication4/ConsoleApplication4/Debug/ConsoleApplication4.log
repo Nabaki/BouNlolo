@@ -1,11 +1,15 @@
-﻿Build started 29/11/2014 15:50:14.
-     1>Project "D:\dossier3A\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\dossier3A\Visual Studio 2013\Projects\ConsoleApplication4\Debug\ConsoleApplication4.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Mega-Nerd\libsndfile\lib" /LIBPATH:"C:\Program Files (x86)\OpenALsdk\libs\Win32" OpenAL32.lib "libsndfile-1.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\dossier3A\Visual Studio 2013\Projects\ConsoleApplication4\Debug\ConsoleApplication4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\dossier3A\Visual Studio 2013\Projects\ConsoleApplication4\Debug\ConsoleApplication4.lib" /MACHINE:X86 Debug\ConsoleApplication4.obj
+﻿La génération a démarré 29/11/2014 17:51:05.
+     1>Projet "C:\Users\Nabaki\Documents\Visual Studio 2013\Projects\BouNlolo\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Mega-Nerd\libsndfile\include" /I"C:\Program Files (x86)\OpenAL 1.1 SDK\include" /I"C:\Program Files (x86)\OpenALsdk\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ConsoleApplication4.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ConsoleApplication4.cpp
+         ConsoleApplication4.cpp
+     1>c:\users\nabaki\documents\visual studio 2013\projects\bounlolo\consoleapplication4\consoleapplication4\consoleapplication4.cpp(246): warning C4018: '<' : incompatibilité signed/unsigned
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Nabaki\Documents\Visual Studio 2013\Projects\BouNlolo\ConsoleApplication4\Debug\ConsoleApplication4.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32" /LIBPATH:"C:\Program Files (x86)\Mega-Nerd\libsndfile\lib" /LIBPATH:"C:\Program Files (x86)\OpenALsdk\libs\Win32" OpenAL32.lib "libsndfile-1.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Nabaki\Documents\Visual Studio 2013\Projects\BouNlolo\ConsoleApplication4\Debug\ConsoleApplication4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Nabaki\Documents\Visual Studio 2013\Projects\BouNlolo\ConsoleApplication4\Debug\ConsoleApplication4.lib" /MACHINE:X86 Debug\ConsoleApplication4.obj
          Debug\stdafx.obj
-     1>LINK : fatal error LNK1168: cannot open D:\dossier3A\Visual Studio 2013\Projects\ConsoleApplication4\Debug\ConsoleApplication4.exe for writing
-     1>Done Building Project "D:\dossier3A\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.vcxproj" (Build target(s)) -- FAILED.
+         ConsoleApplication4.vcxproj -> C:\Users\Nabaki\Documents\Visual Studio 2013\Projects\BouNlolo\ConsoleApplication4\Debug\ConsoleApplication4.exe
+     1>Génération du projet "C:\Users\Nabaki\Documents\Visual Studio 2013\Projects\BouNlolo\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.vcxproj" terminée (Build cible(s)).
 
-Build FAILED.
+La génération a réussi.
 
-Time Elapsed 00:00:00.26
+Temps écoulé 00:00:01.10

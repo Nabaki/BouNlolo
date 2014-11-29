@@ -5,6 +5,7 @@
 //
 
 #include "stdafx.h"
+#include <string>
 #include <alc.h>
 #include <al.h>
 #include <iostream>
@@ -12,6 +13,7 @@
 #include <sndfile.h>
 #include <ctime>
 #include <iomanip>
+#include<fstream>
 
 ALCdevice* Device = NULL;
 ALCdevice* CaptureDevice = NULL;
@@ -147,10 +149,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 
 
-
-
-
-
 	/*
 	// Vidage de la liste
 	std::vector<std::string> Devices;
@@ -167,31 +165,39 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	*/
 
-
-
-
 	/*
 	// Récupération des devices de capture disponibles
-	std::vector<std::string> Devices;
-	//GetCaptureDevices(Devices);
+	std::vector<std::string> devices;
 
+	const ALCchar* deviceList = alcGetString(NULL, ALC_DEVICE_SPECIFIER);
+
+	if (deviceList)
+	{
+		while (strlen(deviceList) > 0)
+		{
+			devices.push_back(deviceList);
+			deviceList = deviceList + 1;
+		}
+
+	}
+
+	//getCaptureDevice(devices);
 
 	// On affiche la liste à l'utilisateur
-	std::cout << "Veuillez choisir un device pour la capture :" << std::endl << std::endl;
-	//for (std::size_t i = 0; i < Devices.size(); ++i)
-	std::cout << "[" << i << "] "<< Devices[2] << std::endl;
+	std::cout << "Veuillez choisir un device pour la capture :" << std::endl;
+	for (int i = 0; i < devices.size(); ++i)
+		std::cout << i+1 << "-" << devices[i] << std::endl;
 
 	// Et on le laisse choisir
-
 	int Choice;
 	std::cin >> Choice;
-
 
 
 	// Initialisation de la capture
 	if (!InitCapture(actualDeviceName))
 	return EXIT_FAILURE;
 	*/
+
 	// Lancement de la capture
 	alcCaptureStart(CaptureDevice);
 
@@ -200,8 +206,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	// On attend que l'utilisateur appuie sur entrée...
 	std::cout << "Appuyez sur entree pour commencer 5 secondes de capture..." << std::endl;
-	std::cin.ignore(10000, '\n');
-	std::cin.ignore(10000, '\n');
+//	std::cin.ignore(10000, '\n');
+//	std::cin.ignore(10000, '\n');
 
 	// ...Et c'est parti pour 5 secondes de capture
 	time_t Start = time(NULL);
@@ -232,6 +238,16 @@ int _tmain(int argc, _TCHAR* argv[])
 		Samples.resize(Start + SamplesAvailable);
 		alcCaptureSamples(CaptureDevice, &Samples[Start], SamplesAvailable);
 	}
+	
+	//écrire dans un fichier
+	std::ofstream myfile;
+	myfile.open("samples.txt");
+	for (int i = 0; i<Samples.size(); i++)
+	{
+		myfile << Samples[i] << " ";
+	}
+	myfile.close();
+	
 
 	// On sauvegarde les échantillons capturés dans un fichier
 	SaveSound("bou3ou3.wav", Samples);
